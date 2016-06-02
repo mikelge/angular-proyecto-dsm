@@ -1,0 +1,26 @@
+
+
+<div class="card notashow">
+  
+  <h3 class='descripcion' id='titulo'>Título: </h3>
+  <p class='parrafo' id='desc1'>{{notaShowCtrl.nota.title || notaShowCtrl.nota.title}}</p>
+  <h3 class='descripcion '>Descripción:</h3>
+  <p class ='parrafo' id='desc2'>{{notaShowCtrl.nota.description}}</p>
+  <h3 class='descripcion'>Contenido:</h3>
+  <p class='parrafo' id='desc3'>{{notaShowCtrl.nota.content}}</p>
+ 
+  <a class="btn-b boton" id='volver' href='#/notas'>
+        <i class="icon add"></i>
+        Volver
+      </a>
+      <a class="btn-b boton" href='#/notas/editar/{{notaShowCtrl.nota._id}}'>
+        <i class="icon add"></i>
+        Editar
+      </a>
+      <button class="btn-b boton" ng-click="BorrarNota(nota)">
+        <i class="icon add"></i>
+        Borrar
+      </a>
+ 
+</div>
+

@@ -1,0 +1,20 @@
+
+<div class="users-wrapper">
+
+  <h1 class='user'>Usuarios</h1>
+  <input class='user_search' placeholder="  Buscar..." ng-model="search.$"/>
+  <div class="users-wrapper">
+    <a class="card-users"
+      ng-repeat="usuario in UsuariosIndex.usuarios | filter: search">
+      <na-elemento-usuario
+
+        title="usuario.name"
+        description="usuario.bio"
+        image="gravatarUrl(usuario.email)">
+      </na-elemento-usuario>
+    </a>
+  </div>
+</div>
+
+
+     
